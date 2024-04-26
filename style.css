@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.logo-onebitcode {
+  width: 200px;
+}
+.header {
+  background-color: rgb(0, 0, 0);
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 15vh;
+  flex-wrap: wrap;
+}
+.buttonHeader {
+  border-color: transparent;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.buttonHeader:hover {
+  border-bottom: 2px solid red;
+}
+.titulo {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.paragrafo {
+  text-align: center;
+  padding: 10px;
+}
+.Grid-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "maincontent sidbarcontent";
+}
+.imgs-principais {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.titulos-categorias-principais {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+.titulos-categorias-principais {
+  padding: 6px;
+}
+.item {
+  width: 280px;
+  height: 380px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: maincontent;
+}
+.item:hover {
+  border-color: black;
+}
+.img-extras {
+  width: 100%;
+  border-radius: 10px;
+}
+.sidbarcontent {
+  background-color: #383838;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: sidbarcontent;
+  gap: 20px;
+}
+.sidbarcard {
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidbarcard:hover {
+  border-color: gainsboro;
+}
+.titulos-categorias-extras {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.footer {
+  width: 100%;
+  min-width: 40px;
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-to-top {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.back-to-top:hover {
+  border-bottom: 2px solid red;
+}
+.a {
+  color: transparent;
+}
+@media (max-width: 630px) {
+  .Grid-container {
+    grid-template-areas:
+      "maincontent"
+      "sidbarcontent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidbarcontent {
+    min-width: auto;
+  }
+  .back-to-top {
+    font-size: 19px;
+  }
+}
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+} ;
